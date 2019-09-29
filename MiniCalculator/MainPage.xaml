@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiniCalculator.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="result"
+               BackgroundColor="Gray"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               FontSize="48"
+               Text="0"
+               Grid.ColumnSpan="4"/>
+        <Button Text="C"
+                Grid.Row="1"
+                Grid.Column="0"
+                Clicked="cClick"
+                BackgroundColor="White"/>
+        <Button Text="+/-"
+                Grid.Row="1"
+                Grid.Column="1"
+                Clicked="plusMinusClick"
+                BackgroundColor="White"/>
+        <Button Text="%"
+                Grid.Row="1" 
+                Clicked="percentClick"
+                Grid.Column="2"
+                BackgroundColor="White"/>
+        <Button Text="DIV"
+                Grid.Row="1"
+                Clicked="operatorClick"
+                Grid.Column="3"
+                BackgroundColor="Yellow"/>
+        <Button Text="x"
+                Grid.Row="2"
+                Clicked="operatorClick"
+                Grid.Column="3"
+                BackgroundColor="Yellow"/>
+        <Button Text="-"
+                Clicked="operatorClick"
+                Grid.Row="3"          
+                Grid.Column="3"
+                BackgroundColor="Yellow"/>
+        <Button Text="+"
+                Grid.Row="4"          
+                Grid.Column="3"
+                Clicked="operatorClick"
+                BackgroundColor="Yellow"/>
+        <Button Text="."
+                Grid.Row="5"          
+                Grid.Column="2"
+                Clicked="dotClick"
+                BackgroundColor="White"/>
+        <Button Text="="
+                Clicked="resultClick"
+                Grid.Row="5"          
+                Grid.Column="3"
+                BackgroundColor="Yellow"/>
+        <Button Text="7"
+                x:Name="btnNumber7"
+                Grid.Row="2"          
+                Grid.Column="0"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="8"
+                x:Name="btnNumber8"
+                Grid.Row="2"          
+                Grid.Column="1"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="9"
+                x:Name="btnNumber9"
+                Grid.Row="2"          
+                Grid.Column="2"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="4"
+                x:Name="btnNumber4"
+                Grid.Row="3"          
+                Grid.Column="0"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="5"
+                x:Name="btnNumber5"
+                Grid.Row="3"          
+                Grid.Column="1"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="6"
+                Grid.Row="3"     
+                x:Name="btnNumber6"
+                Grid.Column="2"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="1"
+                x:Name="btnNumber1"
+                Grid.Row="4"          
+                Grid.Column="0"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="2"
+                x:Name="btnNumber2"
+                Grid.Row="4"          
+                Grid.Column="1"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="3"
+                x:Name="btnNumber3"
+                Grid.Row="4"          
+                Grid.Column="2"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        <Button Text="0"
+                x:Name="btnNumber0"
+                Grid.Row="5"          
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Clicked="numberClick"
+                BackgroundColor="White"/>
+        </Grid>
+
+
+</ContentPage>
